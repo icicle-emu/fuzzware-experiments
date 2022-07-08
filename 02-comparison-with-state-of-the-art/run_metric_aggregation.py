@@ -15,7 +15,7 @@ except ImportError as e:
 DIR = os.path.dirname(os.path.realpath(__file__))
 target_names = [
     "P2IM/CNC", "P2IM/Drone", "P2IM/Heat_Press", "P2IM/Reflow_Oven", "P2IM/Soldering_Iron", "P2IM/Console", "P2IM/Gateway", "P2IM/PLC", "P2IM/Robot", "P2IM/Steering_Control",
-    "uEmu/6LoWPAN_Receiver", "uEmu/6LoWPAN_Sender", "uEmu/RF_Door_Lock", "uEmu/Thermostat", "uEmu/uEmu.3Dprinter", "uEmu/uEmu.GPSTracker", "uEmu/LiteOS_IoT", "uEmu/utasker_MODBUS", "uEmu/utasker_USB", "uEmu/Zepyhr_SocketCan", "uEmu/XML_Parser"
+    # "uEmu/6LoWPAN_Receiver", "uEmu/6LoWPAN_Sender", "uEmu/RF_Door_Lock", "uEmu/Thermostat", "uEmu/uEmu.3Dprinter", "uEmu/uEmu.GPSTracker", "uEmu/LiteOS_IoT", "uEmu/utasker_MODBUS", "uEmu/utasker_USB", "uEmu/Zepyhr_SocketCan", "uEmu/XML_Parser"
 ]
 
 """
@@ -54,7 +54,7 @@ for target_name in target_names:
         min_bbs_individual_run = min(run_num_bbs_covered, min_bbs_individual_run)
 
         overall_covered_bb_set |= run_covered_bb_set
-    
+
     if num_projects == 0:
         print(f"\nTarget {target_name} ---- Found only incomplete / interrupted runs ----")
     else:
@@ -66,7 +66,7 @@ print("===================================\n")
 
 print("=== Coverage Plots (paper Figure 5) ===")
 """
-For the coverage plots, the 
+For the coverage plots, the
 """
 plots_dir = os.path.join(DIR, "plots")
 if os.path.exists(plots_dir):

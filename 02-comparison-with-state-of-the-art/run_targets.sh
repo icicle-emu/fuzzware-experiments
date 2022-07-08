@@ -34,7 +34,7 @@ if [ $run_with_modeling -eq 1 ]; then
     statistics_names="${statistics_names} modeling-costs mmio-overhead-elim"
 else
     # For the non-modeling cases, we adapt project name and add a pipeline argument
-    project_base_name="${project_base_name}-no-modeling" 
+    project_base_name="${project_base_name}-no-modeling"
     extra_emu_args="$extra_emu_args --disable-modeling"
 fi
 

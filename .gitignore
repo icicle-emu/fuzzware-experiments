@@ -1,0 +1,6 @@
+fuzzware-project*
+**/plots
+**/crash_disasm.asm
+**/full_trace.txt
+**/tlb.txt
+**/log.txt
